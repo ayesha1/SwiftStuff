@@ -28,3 +28,39 @@ func getMostCommonColor(array: [String]) -> [String] {
 }
 
 getMostCommonColor(array: colorArray)
+
+var k = 3
+var arrayOfk : [Int] = []
+for i in 1...k {
+    arrayOfk.append(i)
+}
+
+print(arrayOfk)
+
+
+//permutation
+
+var x = 5/2
+
+func isValid(a: [Int]) -> String {
+    // Write your code here
+    //left subtree
+    //right subtree
+    let yes = "YES"
+    let no = "NO"
+    var returnVal = yes
+    var countOfNodes = a.count
+    var root = a[0]
+    
+    var rightTree = Array(a[a.count/2..<a.count])
+    
+    var leftTree = Array(a[1..<a.count/2])
+    
+    return returnVal
+}
+
+func check(a: [Int]) -> Bool {
+    var root = a[0]
+    if
+    return true
+}
