@@ -9,11 +9,7 @@ func getMostCommonColor(array: [String]) -> [String] {
     var colorDictionary: [String: Int] = [:]
     
     for color in array {
-        if let count = colorDictionary[color] {
-            colorDictionary[color] = count + 1
-        } else {
-            colorDictionary[color] = 1
-        }
+        colorDictionary[color, default:0] += 1
     }
     
     let highestValue = colorDictionary.values.max()
@@ -59,8 +55,16 @@ func isValid(a: [Int]) -> String {
     return returnVal
 }
 
-func check(a: [Int]) -> Bool {
-    var root = a[0]
-    if
-    return true
+func reverseList(head: Node?) -> Node? {
+    var currentNode = head
+    var prev: Node?
+    var next:Node?
+    
+    while currentNode != nil {
+        next = currentNode.next
+        currentNode.next = prev
+        prev = currentNode
+        currentNode = next
+    }
+    return prev
 }
